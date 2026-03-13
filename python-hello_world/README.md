@@ -8,4 +8,8 @@ List of the files and their purposes:
 
 5-print_string.py -> print 3 times a string stored in the variable.
 
-7-edges.py -> 
+7-edges.py -> completed.
+
+8-concat_edges.py -> print object-oriented programming with Python.
+
+9-easter_egg.py -> prints "The Zen of Python".
