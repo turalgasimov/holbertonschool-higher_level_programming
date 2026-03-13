@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 number = 3.14159
-number = round(number, 2)
-print(f'Float: {number}')
+if number == 0: print('Float: 0.00')
+print(f'Float: {round(number, 2)}')
