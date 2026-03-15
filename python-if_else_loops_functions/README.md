@@ -5,3 +5,5 @@ List of the files and their purposes:
 1-last_digit.py -> assign a random signed number to the variable.
 
 2-print_alphabet.py -> prints the ASCII alphabet
+
+3-print_alphabt.py -> prints the ASCII alphabet
