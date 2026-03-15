@@ -7,3 +7,6 @@ List of the files and their purposes:
 2-print_alphabet.py -> prints the ASCII alphabet
 
 3-print_alphabt.py -> prints the ASCII alphabet
+
+4-print_hexa.py -> prints all numbers from 0 to 98 in decimal and in hexadecimal.
+
