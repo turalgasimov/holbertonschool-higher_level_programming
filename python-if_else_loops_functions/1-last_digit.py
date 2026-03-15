@@ -7,7 +7,7 @@ lastDigit = number % 10
 if number < 0:
     lastDigit += -10
 str = (
-    "and is greate than 5" 
+    "and is greater than 5" 
     if lastDigit > 5 
     else "and is less than 6 and not 0" 
     if lastDigit < 6 and lastDigit != 0 else "and is 0")
