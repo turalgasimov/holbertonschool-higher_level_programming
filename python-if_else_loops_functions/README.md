@@ -22,3 +22,5 @@ List of the files and their purposes:
 
 10-add.py -> adds two integers.
 
+11-pow.py ->  computes a to the power of b.
+
