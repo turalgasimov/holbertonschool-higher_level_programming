@@ -3,6 +3,8 @@
 def uppercase(str):
     s = ''
     size = len(str)
+    if str == '':
+        str = ' '
     for i in range(len(str)):
         if i == size - 1:
             s = '\n'
@@ -10,3 +12,7 @@ def uppercase(str):
             print('{}'.format(chr(ord(str[i]) - 32)), end=s)
         else:
             print(str[i], end=s)
+
+uppercase("Best School 98 Battery street")
+uppercase("")
+uppercase(" ")
