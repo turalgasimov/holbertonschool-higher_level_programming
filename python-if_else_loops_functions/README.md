@@ -16,3 +16,5 @@ List of the files and their purposes:
 
 7-islower.py -> checks for lowercase character.
 
+8-uppercase.py ->  prints a string in uppercase followed by a new line.
+
