@@ -28,3 +28,4 @@ List of the files and their purposes:
 
 100-print_tebahpla.py -> prints the ASCII alphabet, in reverse order.
 
+101-remove_char_at.py -> creates a copy of the string, removing the character at the position n.
