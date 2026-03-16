@@ -6,3 +6,5 @@ List of the files and their purposes:
 
 2-args.py -> prints the number of and the list of its arguments.
 
+3-infinite_add.py -> prints the result of the addition of all arguments.
+
