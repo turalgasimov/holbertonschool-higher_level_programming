@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
 def fizzbuzz():
-    for i in range(101):
-        s = ', '
-        if i == 0:
-            print(0, end=s)
+    for i in range(1, 101):
+        s = ' '
         if i == 100:
             s = '\n'
         if i % 3 == 0:
