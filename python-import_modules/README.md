@@ -14,3 +14,5 @@ List of the files and their purposes:
 
 100-my_calculator.py -> imports all functions from the file calculator_1.py.
 
+101-easy_print.py -> prints #pythoniscool.
+
