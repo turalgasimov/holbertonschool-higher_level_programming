@@ -20,3 +20,5 @@ List of the files and their purposes:
 
 9-print_last_digit.py -> prints the last digit of a number.
 
+10-add.py -> adds two integers.
+
