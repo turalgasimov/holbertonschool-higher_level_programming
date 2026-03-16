@@ -25,3 +25,6 @@ List of the files and their purposes:
 11-pow.py ->  computes a to the power of b.
 
 12-fizzbuzz.py ->  prints the numbers from 1 to 100 separated by a space.
+
+100-print_tebahpla.py -> prints the ASCII alphabet, in reverse order.
+
