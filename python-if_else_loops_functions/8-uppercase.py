@@ -1,14 +1,9 @@
 #!/usr/bin/python3
 
 def uppercase(str):
-    s = ''
-    size = len(str)
-    if str == '':
-        str = ' '
+    str += '\n'
     for i in range(len(str)):
-        if i == size - 1:
-            s = '\n'
         if ord('a') <= ord(str[i]) <= ord('z'):
-            print('{}'.format(chr(ord(str[i]) - 32)), end=s)
+            print('{}'.format(chr(ord(str[i]) - 32)), end='')
         else:
-            print(str[i], end=s)
+            print(str[i], end='')
