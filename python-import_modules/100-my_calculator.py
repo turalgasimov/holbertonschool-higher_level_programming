@@ -6,20 +6,21 @@ if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    operator = sys.argv[2]
-    a = int(sys.argv[1])
-    b = int(sys.argv[3])
-    res = 0
-    match operator:
-        case "+":
-            res = add(a, b)
-        case "-":
-            res = sub(a, b)
-        case "*":
-            res = mul(a, b)
-        case "/":
-            res = div(a, b)
-        case _:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
-    print('{} {} {} = {}'.format(a, operator, b, res))
+    else:
+        op = sys.argv[2]
+        a = int(sys.argv[1])
+        b = int(sys.argv[3])
+        res = 0
+        match op:
+            case "+":
+                res = add(a, b)
+            case "-":
+                res = sub(a, b)
+            case "*":
+                res = mul(a, b)
+            case "/":
+                res = div(a, b)
+            case _:
+                print("Unknown operator. Available operators: +, -, * and /")
+                exit(1)
+        print('{} {} {} = {}'.format(a, op, b, res))
