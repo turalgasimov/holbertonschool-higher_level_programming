@@ -12,7 +12,3 @@ def uppercase(str):
             print('{}'.format(chr(ord(str[i]) - 32)), end=s)
         else:
             print(str[i], end=s)
-
-# uppercase("Best School 98 Battery street")
-# uppercase("")
-# uppercase(" ")
