@@ -13,6 +13,6 @@ def uppercase(str):
         else:
             print(str[i], end=s)
 
-uppercase("Best School 98 Battery street")
-uppercase("")
-uppercase(" ")
+# uppercase("Best School 98 Battery street")
+# uppercase("")
+# uppercase(" ")
