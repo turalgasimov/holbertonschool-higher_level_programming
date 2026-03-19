@@ -8,4 +8,5 @@ def delete_at(my_list=[], idx=0):
             if i == idx:
                 continue
             list.append(my_list[i])
+    my_list = list
     return list
