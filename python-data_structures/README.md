@@ -20,3 +20,5 @@ List of the files and their purposes:
 
 9-max_integer.py -> finds the biggest integer of a list.
 
+10-divisible_by_2.py -> finds all multiples of 2 in a list.
+
