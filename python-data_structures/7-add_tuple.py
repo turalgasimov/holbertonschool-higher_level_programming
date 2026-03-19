@@ -16,4 +16,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if size_b >= 2:
         b1 = tuple_b[1]
 
-    return (a0+a1, b0+b1)
+    return (a0+b0, a1+b1)
