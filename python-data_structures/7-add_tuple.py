@@ -6,12 +6,12 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     a0 = a1 = b0 = b1 = 0
 
-    if size_a == 1:
+    if size_a > 0:
         a0 = tuple_a[0]
     if size_a >= 2:
         a1 = tuple_a[1]
 
-    if size_b == 1:
+    if size_b > 0:
         b0 = tuple_b[0]
     if size_b >= 2:
         b1 = tuple_b[1]
