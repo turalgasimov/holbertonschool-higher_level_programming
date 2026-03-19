@@ -18,3 +18,5 @@ List of the files and their purposes:
 
 8-multiple_returns.py -> returns a tuple with the length of a string and its first character.
 
+9-max_integer.py -> finds the biggest integer of a list.
+
