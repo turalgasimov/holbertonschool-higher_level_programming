@@ -15,3 +15,6 @@ List of the files and their purposes:
 6-print_matrix_integer.py -> prints a matrix of integers.
 
 7-add_tuple.py -> that adds 2 tuples.
+
+8-multiple_returns.py -> returns a tuple with the length of a string and its first character.
+
