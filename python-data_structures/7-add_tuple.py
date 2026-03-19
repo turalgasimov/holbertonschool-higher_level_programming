@@ -4,26 +4,16 @@ def add_tuple(tuple_a=(), tuple_b=()):
     size_a = len(tuple_a)
     size_b = len(tuple_b)
 
-    match (size_a):
-        case 0:
-            a0 = 0
-            a1 = 0
-        case 1:
-            a0 = tuple_a[0]
-            a1 = 0
-        case 2, _:
-            a0 = tuple_a[0]
-            a1 = tuple_a[1]
-    
-    match (size_b):
-        case 0:
-            b0 = 0
-            b1 = 0
-        case 1:
-            b0 = tuple_b[0]
-            b1 = 0
-        case 2, _:
-            b0 = tuple_b[0]
-            b1 = tuple_b[1]
+    a0 = a1 = b0 = b1 = 0
+
+    if size_a == 1:
+        a0 = tuple_a[0]
+    if size_a >= 2:
+        a1 = tuple_a[1]
+
+    if size_b == 1:
+        b0 = tuple_b[0]
+    if size_b >= 2:
+        b1 = tuple_b[1]
 
     return (a0+a1, b0+b1)
