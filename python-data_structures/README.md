@@ -14,3 +14,4 @@ List of the files and their purposes:
 
 6-print_matrix_integer.py -> prints a matrix of integers.
 
+7-add_tuple.py -> that adds 2 tuples.
