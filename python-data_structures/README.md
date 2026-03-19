@@ -24,3 +24,4 @@ List of the files and their purposes:
 
 11-delete_at.py -> deletes the item at a specific position in a list.
 
+12-switch.py -> switches value of a and b
