@@ -12,3 +12,5 @@ List of the files and their purposes:
 
 5-number_keys.py -> returns the number of keys in a dictionary.
 
+6-print_sorted_dictionary.py -> prints a dictionary by ordered keys.
+
