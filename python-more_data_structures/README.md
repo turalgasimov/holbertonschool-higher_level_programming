@@ -24,3 +24,5 @@ List of the files and their purposes:
 
 11-multiply_list_map.py -> returns a list with all values multiplied by a number without using any loops.
 
+12-roman_to_int.py -> converts a Roman numeral to an integer.
+
