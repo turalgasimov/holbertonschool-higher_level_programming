@@ -16,7 +16,10 @@ def roman_to_int(roman_string):
     sum = 0
     for i in range(len(roman_string)):
         num = roman_dict[roman_string[i]]
-        if (i < len(roman_string) - 1) and (num < roman_dict[roman_string[i+1]]):
+        if (
+            (i < len(roman_string) - 1)
+        and (num < roman_dict[roman_string[i+1]])
+        ):
             num *= -1
         sum += num
 
