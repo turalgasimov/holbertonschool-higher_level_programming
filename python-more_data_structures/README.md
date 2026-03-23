@@ -18,3 +18,5 @@ List of the files and their purposes:
 
 8-simple_delete.py -> deletes a key in a dictionary.
 
+9-multiply_by_2.py -> returns a new dictionary with all values multiplied by 2.
+
