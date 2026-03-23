@@ -22,3 +22,5 @@ List of the files and their purposes:
 
 10-best_score.py -> returns a key with the biggest integer value.
 
+11-multiply_list_map.py -> returns a list with all values multiplied by a number without using any loops.
+
