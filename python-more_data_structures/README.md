@@ -28,3 +28,5 @@ List of the files and their purposes:
 
 100-weight_average.py -> returns the weighted average of all integers tuple.
 
+101-square_matrix_map.py -> computes the square value of all integers of a matrix using map.
+
