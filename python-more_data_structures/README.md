@@ -20,3 +20,5 @@ List of the files and their purposes:
 
 9-multiply_by_2.py -> returns a new dictionary with all values multiplied by 2.
 
+10-best_score.py -> returns a key with the biggest integer value.
+
