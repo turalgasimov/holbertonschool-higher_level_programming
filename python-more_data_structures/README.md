@@ -26,3 +26,5 @@ List of the files and their purposes:
 
 12-roman_to_int.py -> converts a Roman numeral to an integer.
 
+100-weight_average.py -> returns the weighted average of all integers tuple.
+
