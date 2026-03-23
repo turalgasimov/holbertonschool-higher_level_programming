@@ -16,3 +16,5 @@ List of the files and their purposes:
 
 7-update_dictionary.py -> replaces or adds key/value in a dictionary.
 
+8-simple_delete.py -> deletes a key in a dictionary.
+
