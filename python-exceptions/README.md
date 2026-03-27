@@ -6,3 +6,5 @@ List of the files and their purposes:
 
 2-safe_print_list_integers.py -> prints the first x elements of a list and only integers.
 
+3-safe_print_division.py -> divides 2 integers and prints the result.
+
