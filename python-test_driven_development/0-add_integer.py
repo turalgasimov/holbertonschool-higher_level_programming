@@ -2,6 +2,7 @@
 """This module defines a function that adds two integers."""
 
 def add_integer(a, b=98):
+
     """Add two numbers"""
     if not (isinstance(a, int) or isinstance(a, float)):
         raise TypeError("a must be an integer")
