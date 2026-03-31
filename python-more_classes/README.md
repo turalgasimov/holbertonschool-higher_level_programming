@@ -14,3 +14,5 @@ List of the files and their purposes:
 
 6-rectangle.py -> defines a rectangle by: (based on 5-rectangle.py)
 
+7-rectangle.py -> defines a rectangle by: (based on 6-rectangle.py)
+
