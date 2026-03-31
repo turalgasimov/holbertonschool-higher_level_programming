@@ -19,7 +19,7 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
-        self.print_symbol = print_symbol
+        Rectangle.print_symbol = print_symbol
         Rectangle.number_of_instances += 1
 
     @property
@@ -60,9 +60,9 @@ class Rectangle:
         str = ''
         for i in range(self.height):
             if i == self.height - 1:
-                str += self.print_symbol*self.width
+                str += Rectangle.print_symbol*self.width
                 break
-            str += self.print_symbol*self.width+"\n"
+            str += Rectangle.print_symbol*self.width+"\n"
         return str
 
     def __repr__(self):
