@@ -12,3 +12,4 @@ List of the files and their purposes:
 
 5-square.py -> defines a square by: (based on 4-square.py)
 
+6-square.py -> defines a square by: (based on 5-square.py)
