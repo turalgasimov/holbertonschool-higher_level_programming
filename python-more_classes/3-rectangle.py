@@ -52,5 +52,5 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             print()
-        for _ in self.height:
+        for _ in range(self.height):
             print('#' * self.width)
