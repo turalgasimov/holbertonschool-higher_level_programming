@@ -8,7 +8,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = '#'
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0, print_symbol='#'):
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width < 0:
@@ -19,6 +19,7 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
+        self.print_symbol = print_symbol
         Rectangle.number_of_instances += 1
 
     @property
@@ -59,9 +60,9 @@ class Rectangle:
         str = ''
         for i in range(self.height):
             if i == self.height - 1:
-                str += Rectangle.print_symbol*self.width
+                str += self.print_symbol*self.width
                 break
-            str += Rectangle.print_symbol*self.width+"\n"
+            str += self.print_symbol*self.width+"\n"
         return str
 
     def __repr__(self):
@@ -70,3 +71,10 @@ class Rectangle:
     def __del__(self):
         print('Bye rectangle...')
         Rectangle.number_of_instances -= 1
+
+my_rectangle_1 = Rectangle(8, 4)
+print(my_rectangle_1)
+my_rectangle_1.print_symbol = "H"
+print(my_rectangle_1)
+my_rectangle_2 = Rectangle(2, 1)
+print(my_rectangle_2)
