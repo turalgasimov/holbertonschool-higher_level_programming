@@ -56,13 +56,13 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ''
-        str = ''
+        res = ''
         for i in range(self.height):
             if i == self.height - 1:
-                str += self.print_symbol*self.width
+                res += str(self.print_symbol)*self.width
                 break
-            str += self.print_symbol*self.width+"\n"
-        return str
+            res += str(self.print_symbol)*self.width+"\n"
+        return res
 
     def __repr__(self):
         return f'{self.__class__.__name__}({self.width}, {self.height})'
