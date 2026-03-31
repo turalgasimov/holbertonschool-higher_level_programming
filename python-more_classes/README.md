@@ -6,3 +6,5 @@ List of the files and their purposes:
 
 2-rectangle.py -> defines a rectangle by: (based on 1-rectangle.py)
 
+3-rectangle.py -> defines a rectangle by: (based on 2-rectangle.py)
+
