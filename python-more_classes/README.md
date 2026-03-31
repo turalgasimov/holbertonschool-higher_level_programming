@@ -10,3 +10,5 @@ List of the files and their purposes:
 
 4-rectangle.py -> defines a rectangle by: (based on 3-rectangle.py)
 
+5-rectangle.py -> defines a rectangle by: (based on 4-rectangle.py)
+
