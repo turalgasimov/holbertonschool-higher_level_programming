@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""This module defines a square."""
+# 0-square.py
+"""Define a class Square."""
+
 
 class Square:
-	"""
-	Defines a square in the system.
-
-	Attributes:
-		None
-	"""
+	"""Defines a square in the system."""
 	pass
