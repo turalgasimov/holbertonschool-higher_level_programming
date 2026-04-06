@@ -12,3 +12,5 @@ List of the files and their purposes:
 
 5-base_geometry.py -> empty class BaseGeometry.
 
+6-base_geometry.py -> class BaseGeometry (based on 5-base_geometry.py).
+
