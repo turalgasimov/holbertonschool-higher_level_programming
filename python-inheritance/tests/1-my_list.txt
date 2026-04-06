@@ -83,3 +83,18 @@ Test 6: Single element
 [42]
 >>> print(my_list)
 [42]
+
+
+Test 7: Negative element
+------------------------
+>>> my_list = MyList()
+>>> my_list.append(3)
+>>> my_list.append(-1)
+>>> my_list.append(2)
+>>> my_list.append(0)
+>>> print(my_list)
+[3, -1, 2, 0]
+>>> my_list.print_sorted()
+[-1, 0, 2, 3]
+>>> print(my_list)
+[3, -1, 2, 0]
