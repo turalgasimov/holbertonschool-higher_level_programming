@@ -10,7 +10,7 @@ def lookup(obj):
     methods of an object'''
 
     atr = dir(obj)
-    l = []
+    atr_list = []
     for i in atr:
-        l.append(i)
-    return l
+        atr_list.append(i)
+    return atr_list
