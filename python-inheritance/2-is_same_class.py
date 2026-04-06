@@ -10,4 +10,4 @@ def is_same_class(obj, a_class):
     otherwise False.'''
 
     test = a_class()
-    return instance(obj, test)
+    return isinstance(obj, test)
