@@ -4,3 +4,5 @@ List of the files and their purposes:
 
 1-my_list.py -> inherits from list.
 
+2-is_same_class.py -> returns True if the object is exactly an instance of the specified class ; otherwise False.
+
