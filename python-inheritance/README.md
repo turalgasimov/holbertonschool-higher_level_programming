@@ -10,3 +10,5 @@ List of the files and their purposes:
 
 4-inherits_from.py -> returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
 
+5-base_geometry.py -> empty class BaseGeometry.
+
