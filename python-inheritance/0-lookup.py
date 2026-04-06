@@ -9,5 +9,8 @@ def lookup(obj):
     available attributes and
     methods of an object'''
 
+    atr = dir(obj)
     l = []
-    return dir(l)
+    for i in atr:
+        l.append(i)
+    return l
