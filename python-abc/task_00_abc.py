@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''This module contains ABC class Animal'''
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
@@ -8,7 +8,7 @@ class Animal(ABC):
 
     @abstractmethod
     def sound(self):
-        ...
+        pass
 
 class Dog(Animal):
     '''Dog class'''
