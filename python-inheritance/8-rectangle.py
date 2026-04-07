@@ -2,7 +2,7 @@
 '''This module is child class of BaseGeometry.'''
 
 
-class Rectangle(7-base_geometry.BaseGeometry):
+class Rectangle(BaseGeometry):
     '''Is child of BaseGeometry.'''
 
     def __init__(self, width, height):
