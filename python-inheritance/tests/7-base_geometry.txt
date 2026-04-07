@@ -79,10 +79,10 @@ Test 10: integer_validator(“age”, {3, 4})
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] age must be an integer
 
-Test 10: integer_validator(“age”, None)
+Test 11: integer_validator(“age”, None)
 -----------------------------------------
 >>> try:
-...     bg.integer_validator("age", {3, 4})
+...     bg.integer_validator("age", None)
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] age must be an integer
