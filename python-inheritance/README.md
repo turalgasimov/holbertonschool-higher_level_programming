@@ -18,3 +18,6 @@ List of the files and their purposes:
 
 8-rectangle.py -> inherits from BaseGeometry (7-base_geometry.py).
 
+9-rectangle.py -> inherits from BaseGeometry (7-base_geometry.py).
+(task based on 8-rectangle.py)
+
