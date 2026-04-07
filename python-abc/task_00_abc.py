@@ -7,7 +7,8 @@ class Animal(ABC):
     '''Animal class'''
 
     @abstractmethod
-    def sound(self)
+    def sound(self):
+        pass
 
 class Dog(Animal):
     '''Dog class'''
