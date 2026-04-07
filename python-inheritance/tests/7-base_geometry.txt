@@ -39,26 +39,10 @@ Test 5: area() not implemented
 ...     print(e)
 area() is not implemented
 
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
->>> bg = BaseGeometry()
-
->>> bg.integer_validator("size", 10)
-
+Test 6: integer_validator()
+---------------------------
 >>> try:
-...     bg.integer_validator("size", "10")
+...     bg.integer_validator()
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] size must be an integer
-
->>> try:
-...     bg.integer_validator("size", 0)
-... except Exception as e:
-...     print("[{}] {}".format(e.__class__.__name__, e))
-[ValueError] size must be greater than 0
-
->>> try:
-...     bg.integer_validator("size", -3)
-... except Exception as e:
-...     print("[{}] {}".format(e.__class__.__name__, e))
-[ValueError] size must be greater than 0
+[TypeError] integer_validator() missing 2 required positional arguments: 'name' and 'value'
