@@ -7,7 +7,8 @@ class Rectangle(BaseGeometry):
     '''Is child of BaseGeometry.'''
 
     def __init__(self, width, height):
-        if super().integer_validator("width", width):
-            self.__width = width
-        if super().integer_validator("height", height):
-            self.__height = height
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
+
+        self.__width = width
+        self.__height = height
