@@ -14,3 +14,5 @@ List of the files and their purposes:
 
 6-base_geometry.py -> class BaseGeometry (based on 5-base_geometry.py).
 
+7-base_geometry.py -> class BaseGeometry (based on 6-base_geometry.py).
+
