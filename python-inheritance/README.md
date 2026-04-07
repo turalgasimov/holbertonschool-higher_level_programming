@@ -16,3 +16,5 @@ List of the files and their purposes:
 
 7-base_geometry.py -> class BaseGeometry (based on 6-base_geometry.py).
 
+8-rectangle.py -> inherits from BaseGeometry (7-base_geometry.py).
+
