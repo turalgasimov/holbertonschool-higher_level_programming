@@ -7,13 +7,17 @@ class Rectangle(BaseGeometry):
     '''Is child of BaseGeometry.'''
 
     def __init__(self, width, height):
-        if super().integer_validator("width", width):
-            self.__width = width
-        if super().integer_validator("height", height):
-            self.__height = height
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
+
+        self.__width = width
+        self.__height = height
 
     def area(self):
         return self.__width * self.__height
 
     def __str__(self):
-        return f"{self} {self.__width}/{self.__height}"
+        return f"[Rectangle] {self.__width}/{self.__height}"
+
+r = Rectangle(1, 4)
+print(r.area())
