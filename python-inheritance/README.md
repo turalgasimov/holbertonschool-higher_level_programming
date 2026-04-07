@@ -21,4 +21,7 @@ List of the files and their purposes:
 9-rectangle.py -> inherits from BaseGeometry (7-base_geometry.py).
 (task based on 8-rectangle.py)
 
-10-square.py -> inherits from Rectangle (9-rectangle.py):
+10-square.py -> inherits from Rectangle (9-rectangle.py).
+
+11-square.py ->  inherits from Rectangle (9-rectangle.py).
+(task based on 10-square.py)
