@@ -11,7 +11,6 @@ class CountedIterator:
         self.counter = 0
 
 
-    @property
     def get_count(self):
         return self.counter
 
@@ -22,4 +21,4 @@ class CountedIterator:
             self.counter += 1
             return item:
         except StopIteration:
-            raise StopIteration
+            raise StopIteration("No more items to iterate")
