@@ -19,6 +19,6 @@ class CountedIterator:
         try: 
             item = next(self.iterator)
             self.counter += 1
-            return item:
+            return item
         except StopIteration:
-            raise StopIteration("No more items to iterate")
+            raise StopIteration
