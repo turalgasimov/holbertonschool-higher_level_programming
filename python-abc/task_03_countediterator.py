@@ -6,9 +6,9 @@ from abc import ABC, abstractmethod
 class CountedIterator:
     """class CountedIterator"""
 
-    def __init__(self, iterator, counter=0):
-        self.iterator = iter(self)
-        self.counter = counter
+    def __init__(self, iterable):
+        self.iterator = iter(iterable)
+        self.counter = 0
 
 
     @property
@@ -17,9 +17,9 @@ class CountedIterator:
 
 
     def __next__(self):
-        self.counter += 1
-        item = super().next(self)
-        if item is None:
+        try: 
+            item = super().next(self.iterator)
+            self.counter += 1
+            return item:
+        except StopIteration:
             raise StopIteration
-        else:
-            return item
