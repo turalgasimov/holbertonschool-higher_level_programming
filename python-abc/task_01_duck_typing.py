@@ -1,45 +1,58 @@
 #!/usr/bin/python3
-'''This module contains ABC class Shape'''
+"""This module contains an abstract base class Shape and its subclasses."""
+
 from abc import ABC, abstractmethod
 import math as m
 
 
 class Shape(ABC):
-    '''abstract class Shape'''
+    """Abstract class Shape."""
 
     @abstractmethod
     def area(self):
+        """Calculate area."""
         pass
 
     @abstractmethod
     def perimeter(self):
+        """Calculate perimeter."""
         pass
 
-class Circle(ABC):
-    '''class Circle'''
+
+class Circle(Shape):
+    """Class representing a circle."""
 
     def __init__(self, radius):
+        """Initialize circle with radius."""
         self.radius = radius
 
     def area(self):
+        """Return area of the circle."""
         return m.pi * (self.radius ** 2)
 
     def perimeter(self):
-        return self.radius * 2 * m.pi
+        """Return perimeter of the circle."""
+        return 2 * m.pi * self.radius
 
-class Rectangle(ABC):
-    '''class Rectangle'''
+
+class Rectangle(Shape):
+    """Class representing a rectangle."""
 
     def __init__(self, width, height):
+        """Initialize rectangle with width and height."""
         self.width = width
         self.height = height
 
     def area(self):
+        """Return area of the rectangle."""
         return self.width * self.height
 
     def perimeter(self):
+        """Return perimeter of the rectangle."""
         return 2 * (self.width + self.height)
 
-def shape_info(self):
-    print(f'Area: {self.area()}')
-    print(f'Perimeter: {self.perimeter()}')
+
+def shape_info(shape):
+    """Print area and perimeter of a shape."""
+    print(f"Area: {shape.area()}")
+    print(f"Perimeter: {shape.perimeter()}")
