@@ -46,11 +46,3 @@ class Rectangle(ABC):
 def shape_info(self):
     print(f'Area: {self.area()}')
     print(f'Perimeter: {self.perimeter()}')
-
-
-if __name__ == "__main__":
-    circle = Circle(radius=1)
-    rectangle = Rectangle(width=1, height=2)
-
-    shape_info(circle)
-    shape_info(rectangle)
