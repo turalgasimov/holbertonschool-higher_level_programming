@@ -17,8 +17,11 @@ class VerboseList(list):
 
 
     def remove(self, item):
-        print(f"Removed [{item}] from the list.")
-        super().remove(item)
+        if item not in self:
+            print("Item not found")
+        else:
+            print(f"Removed [{item}] from the list.")
+            super().remove(item)
 
 
     def pop(self, index=None):
