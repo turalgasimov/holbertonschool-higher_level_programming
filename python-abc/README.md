@@ -8,3 +8,5 @@ task_02_verboselist.py -> VerboseList
 
 task_03_countediterator.py -> CountedIterator
 
+task_04_flyingfish.py -> FlyingFish
+
