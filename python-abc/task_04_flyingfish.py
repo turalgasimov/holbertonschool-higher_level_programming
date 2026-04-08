@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contains a class CountedIterator."""
+"""This module contains a class FlyingFish."""
 from abc import ABC, abstractmethod
 
 
