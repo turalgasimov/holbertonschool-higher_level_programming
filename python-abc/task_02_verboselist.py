@@ -17,17 +17,11 @@ class VerboseList(list):
 
 
     def remove(self, item):
-        if item not in self:
-            raise ValueError
-        else:
-            print(f"Removed [{item}] from the list.")
-            super().remove(item)
+        print(f"Removed [{item}] from the list.")
+        super().remove(item)
 
 
-    def pop(self, index=None):
-        if index is None:
-            print(f"Popped [{self[-1]}] from the list.")
-            super().pop()
-        else:
-            print(f"Popped [{self[index]}] from the list.")
-            super().pop(index)
+    def pop(self, index=-1):
+        item = super().pop(index)
+        print(f"Popped [{item}] from the list.")
+        return item
