@@ -12,3 +12,5 @@ List of the files and their purposes:
 
 5-save_to_json_file.py -> writes an Object to a text file, using a JSON representation.
 
+6-load_from_json_file.py -> creates an Object from a "JSON file".
+
