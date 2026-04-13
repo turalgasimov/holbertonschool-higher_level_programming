@@ -16,3 +16,5 @@ List of the files and their purposes:
 
 7-add_item.py -> adds all arguments to a Python list, and then save them to a file.
 
+8-class_to_json.py -> returns the dictionary description.
+
