@@ -14,6 +14,8 @@ class Student:
         if attrs is not None and all(isinstance(item, str) for item in attrs):
             obj_dict = {}
             for _ in attrs:
+                if _ not in self.__dict__.keys():
+                    continue
                 obj_dict[_] = getattr(self, _)
             return obj_dict
         else:
