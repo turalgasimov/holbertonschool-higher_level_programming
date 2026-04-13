@@ -26,3 +26,4 @@ List of the files and their purposes:
 11-student.py -> class Student that defines a student.
 (based on 10-student.py)
 
+12-pascal_triangle.py -> returns a list of lists of integers representing the Pascal's triangle of n.
