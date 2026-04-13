@@ -23,3 +23,6 @@ List of the files and their purposes:
 10-student.py -> class Student that defines a student.
 (based on 9-student.py)
 
+11-student.py -> class Student that defines a student.
+(based on 10-student.py)
+
