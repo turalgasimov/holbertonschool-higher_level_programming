@@ -6,3 +6,5 @@ List of the files and their purposes:
 
 2-append_write.py -> appends a string at the end of a text file (UTF8) and returns the number of characters added.
 
+3-to_json_string.py -> returns the JSON representation of an object (string).
+
