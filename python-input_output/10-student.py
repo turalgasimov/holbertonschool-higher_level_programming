@@ -12,8 +12,8 @@ class Student:
 
     def to_json(self, attrs=None):
         if all(isinstance(item, str) for item in attrs):
-            dict = {}
+            obj_dict = {}
             for _ in attrs:
-                dict{_, getattr(self, _)}
+                obj_dict[_] = getattr(self, _)
         else:
             return self.__dict__
