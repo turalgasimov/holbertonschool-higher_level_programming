@@ -14,3 +14,5 @@ List of the files and their purposes:
 
 6-load_from_json_file.py -> creates an Object from a "JSON file".
 
+7-add_item.py -> adds all arguments to a Python list, and then save them to a file.
+
