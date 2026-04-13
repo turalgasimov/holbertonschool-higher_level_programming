@@ -18,3 +18,5 @@ List of the files and their purposes:
 
 8-class_to_json.py -> returns the dictionary description.
 
+9-student.py -> class Student that defines a student.
+
