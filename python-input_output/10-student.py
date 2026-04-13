@@ -15,5 +15,6 @@ class Student:
             obj_dict = {}
             for _ in attrs:
                 obj_dict[_] = getattr(self, _)
+            return obj_dict
         else:
             return self.__dict__
