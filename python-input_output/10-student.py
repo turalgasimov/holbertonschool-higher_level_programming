@@ -11,7 +11,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        if all(isinstance(item, str) for item in attrs):
+        if attrs is not None and all(isinstance(item, str) for item in attrs):
             obj_dict = {}
             for _ in attrs:
                 obj_dict[_] = getattr(self, _)
