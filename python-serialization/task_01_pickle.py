@@ -6,17 +6,15 @@ import pickle
 class CustomObject:
     """Class of custom object."""
 
+    class CustomObject:
     def __init__(self, name, age, is_student):
         self.name = name
         self.age = age
         self.is_student = is_student
 
     def serialize(self, filename):
-        try:
-            with open(filename, "wb") as f:
-                pickle.dump(self, f)
-        except Exception:
-            return None
+        with open(filename, "wb") as f:
+            pickle.dump(self, f)
 
     def display(self):
         print(f"Name: {self.name}")
@@ -25,11 +23,5 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        try:
-            with open(filename, "rb") as f:
-                obj = pickle.load(f)
-                if isinstance(obj, cls):
-                    return obj
-                return None
-        except FileNotFoundError:
-            return None
+        with open(filename, "rb") as f:
+            return pickle.load(f)
