@@ -14,12 +14,15 @@ class CustomObject:
         self.age = age
         self.is_student = is_student
 
+
     def serialize(self, filename):
         with open(filename, "wb") as f:
             f.write(pickle.dumps(self))
 
+
     def display(self):
         print(f"Name: {self.name}\nAge: {self.age}\nIs Student: {self.is_student}")
+
 
     @classmethod
     def deserialize(cls, filename):
