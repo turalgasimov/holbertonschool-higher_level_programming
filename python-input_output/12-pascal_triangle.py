@@ -21,7 +21,3 @@ def pascal_triangle(n):
                 pascal_list[i-1] = row
   
     return pascal_list
-
-triangle = pascal_triangle(5)
-for row in triangle:
-    print(row)
