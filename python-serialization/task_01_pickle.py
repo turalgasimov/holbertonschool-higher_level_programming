@@ -5,9 +5,6 @@ import pickle
 
 class CustomObject:
     """Class of custom object."""
-    name = ""
-    age = 0
-    is_student = False
 
     def __init__(self, name, age, is_student):
         self.name = name
@@ -16,33 +13,20 @@ class CustomObject:
 
     def serialize(self, filename):
         with open(filename, "wb") as f:
-            f.write(pickle.dumps(self))
+            pickle.dump(self, f)
 
     def display(self):
-        print(
-            f"Name: {self.name}\n" +
-            f"Age: {self.age}\n" +
-            f"Is Student: {self.is_student}"
-        )
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Is Student: {self.is_student}")
 
     @classmethod
     def deserialize(cls, filename):
         try:
             with open(filename, "rb") as f:
-                data = f.read()
-                return pickle.loads(data)
+                obj = pickle.load(f)
+                if isinstance(obj. cls):
+                    return obj
+                return None
         except FileNotFoundError:
             return None
-
-
-obj = CustomObject(name="John", age=25, is_student=True)
-print("Original Object:")
-obj.display()
-
-# Serialize the object
-obj.serialize("object.pkl")
-
-# Deserialize the object into a new instance
-new_obj = CustomObject.deserialize("object.pkl")
-print("\nDeserialized Object:")
-new_obj.display()
