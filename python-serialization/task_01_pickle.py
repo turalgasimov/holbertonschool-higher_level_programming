@@ -25,7 +25,7 @@ class CustomObject:
         try:
             with open(filename, "rb") as f:
                 obj = pickle.load(f)
-                if isinstance(obj. cls):
+                if isinstance(obj, cls):
                     return obj
                 return None
         except FileNotFoundError:
