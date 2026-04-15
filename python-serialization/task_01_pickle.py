@@ -12,8 +12,11 @@ class CustomObject:
         self.is_student = is_student
 
     def serialize(self, filename):
-        with open(filename, "wb") as f:
-            pickle.dump(self, f)
+        try:
+            with open(filename, "wb") as f:
+                pickle.dump(self, f)
+        except Exception:
+            return None
 
     def display(self):
         print(f"Name: {self.name}")
