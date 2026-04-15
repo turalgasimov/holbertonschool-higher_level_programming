@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module is for serializatino tasks."""
+"""This module is for serialization tasks."""
 import csv
 import json
 
