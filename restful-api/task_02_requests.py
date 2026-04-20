@@ -25,17 +25,15 @@ def fetch_and_save_posts():
 
     sc = resp.status_code
     header = ["id", "title", "body"]
-    r_dict = {}
+    r_json = resp.json()
 
     if (sc == 200):
-        r_json = resp.json()
-
-    with open("posts.csv", "w") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=header)
-        writer.writeheader()
-        
-        for post in r_json:
-            row = {}
-            for field in header:
-                row[field] = post[field]
-                writer.writerow(row)
+        with open("posts.csv", "w") as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=header)
+            writer.writeheader()
+            
+            for post in r_json:
+                row = {}
+                for field in header:
+                    row[field] = post[field]
+                    writer.writerow(row)
