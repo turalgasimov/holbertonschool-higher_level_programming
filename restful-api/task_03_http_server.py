@@ -28,3 +28,8 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json")
             self.end_headers()
             self.wfile.write("404 Not Found".encode("utf-8"))
+
+
+server = HTTPServer(("localhost", 8000), RequestHandler)
+print("Server started at http://localhost:8000")
+server.serve_forever()
