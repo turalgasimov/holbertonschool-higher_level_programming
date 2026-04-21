@@ -16,8 +16,8 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            dataset ={"name": "John", "age": 30, "city": "New York"}
-            self.wfile.write(f"{dataset}".encode("utf-8"))
+            response = {"name": "John", "age": 30, "city": "New York"}
+            self.wfile.write(f"{response.json()}".encode("utf-8"))
         elif self.path == "/status":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
