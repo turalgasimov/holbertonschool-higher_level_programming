@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module contains restful-api tasks."""
 from http.server import HTTPServer, BaseHTTPRequestHandler
+import json
 
 
 class RequestHandler(BaseHTTPRequestHandler):
@@ -17,7 +18,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_header("Content-type", "application/json")
             self.end_headers()
             response = {"name": "John", "age": 30, "city": "New York"}
-            self.wfile.write(f"{response.json()}".encode("utf-8"))
+            self.wfile.write(f"{json.dumps(response)}".encode("utf-8"))
         elif self.path == "/status":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
