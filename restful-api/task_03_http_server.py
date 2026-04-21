@@ -30,6 +30,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.wfile.write("404 Not Found".encode("utf-8"))
 
 
-server = HTTPServer(("localhost", 8000), RequestHandler)
-print("Server started at http://localhost:8000")
-server.serve_forever()
+if __name__ == "__main__":
+    server = HTTPServer(("localhost", 8000), RequestHandler)
+    print("Server started at http://localhost:8000")
+    server.serve_forever()
