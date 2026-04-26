@@ -3,7 +3,6 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # In-memory storage for users
-# Note: Start with an empty dictionary as per instructions to pass the checker
 users = {}
 
 @app.route("/")
@@ -13,7 +12,7 @@ def home():
 
 @app.route("/status")
 def get_status():
-    """Status endpoint."""
+    """Returns OK status."""
     return "OK"
 
 @app.route("/data")
@@ -33,27 +32,25 @@ def get_user(username):
 @app.route("/add_user", methods=["POST"])
 def add_user():
     """Adds a new user to the dictionary with validation."""
-    # 1. Check if request is valid JSON
+    # 1. Parse the incoming JSON data
     data = request.get_json(silent=True)
+    
+    # 2. Check if the request body is valid JSON
     if data is None:
         return jsonify({"error": "Invalid JSON"}), 400
 
-    # 2. Check if username is provided
+    # 3. Check if username is missing
     username = data.get("username")
     if not username:
         return jsonify({"error": "Username is required"}), 400
 
-    # 3. Check if username already exists
+    # 4. Check if username already exists
     if username in users:
         return jsonify({"error": "Username already exists"}), 409
 
-    # 4. Add the user and return confirmation
+    # 5. Add the new user and return the user data as confirmation
     users[username] = data
-    return jsonify({
-        "message": "User added successfully",
-        "user": data
-    }), 201
+    return jsonify(data), 201
 
 if __name__ == "__main__":
-    # Running the development server
-    app.run(debug=True)
+    app.run()
