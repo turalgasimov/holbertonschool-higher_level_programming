@@ -1,2 +1,3 @@
 -- insert row
-INSERT INTO first_table VALUES (id=89, mame='Best School');
+INSERT INTO first_table
+VALUES (89, 'Best School');
