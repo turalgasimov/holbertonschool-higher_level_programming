@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists states matching a user-supplied name from the database."""
+"""Lists states matching a user-supplied name (case-sensitive)."""
 
 import MySQLdb
 import sys
@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     query = (
         "SELECT * FROM states "
-        "WHERE name = '{}' "
+        "WHERE BINARY name = '{}' "
         "ORDER BY id ASC"
     ).format(state_name)
 
