@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""This module connects to a MySQL database and lists all states."""
 import MySQLdb
 import sys
+
 
 if __name__ == "__main__":
     username = sys.argv[1]
